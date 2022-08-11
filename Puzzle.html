@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Puzzle by DreamWeb</h1>
+
+<p>Try to solve it?</p>
+
+<button onclick="showContent()">init</button>
+
+<template>
+  <p>Flowers</p>
+  <img src="https://cdn.discordapp.com/attachments/817024593667031040/1007210645403484161/flowers.png" width="214" height="204">
+  <p>0677CDFF1D19E889F73DB3E2ACAF382509FE7894B52F7C279BE9D8F839BA6640</p>
+  <p>take it easy</p>
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+</body>
+</html>
